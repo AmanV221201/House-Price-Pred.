@@ -1,0 +1,3 @@
+To run this program---
+step 1 Go to cmd prompt.
+step 2 type "streamlit run house_prediction_app.py"

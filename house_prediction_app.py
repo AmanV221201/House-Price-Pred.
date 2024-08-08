@@ -27,7 +27,7 @@ model_path = "house_price_model.joblib"
 try:
     model = joblib.load(model_path)
 except FileNotFoundError:
-    model = XGBRegressor()
+    model = XGBRegressor(tree_method='auto')
     model.fit(X_train, Y_train)
     joblib.dump(model, model_path)
 
